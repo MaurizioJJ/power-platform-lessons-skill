@@ -20,7 +20,16 @@ Every lesson is tagged **Verified** (confirmed on Microsoft Learn or tested live
 
 ## Install
 
-### Claude Desktop or claude.ai
+### Claude Code (plugin)
+
+```sh
+claude plugin marketplace add MaurizioJJ/power-platform-lessons-skill
+claude plugin install power-platform-lessons@power-platform-lessons
+```
+
+Or from inside a session: `/plugin install power-platform-lessons --marketplace MaurizioJJ/power-platform-lessons-skill`. Update later with `claude plugin update power-platform-lessons@power-platform-lessons`.
+
+### Claude Desktop or claude.ai (skill upload)
 
 1. Download [`power-platform-lessons.zip`](power-platform-lessons.zip) from this repo.
 2. Open **Settings → Capabilities** and make sure **Code execution and file creation** is on (skills need it).
@@ -29,14 +38,12 @@ Every lesson is tagged **Verified** (confirmed on Microsoft Learn or tested live
 
 Skills are available on Pro, Max, Team and Enterprise plans. On Team and Enterprise, an admin may need to allow skills first.
 
-### Claude Code
+### Manual copy (Claude Code)
 
 ```sh
 git clone https://github.com/MaurizioJJ/power-platform-lessons-skill.git
-cp -R power-platform-lessons-skill/power-platform-lessons ~/.claude/skills/
+cp -R power-platform-lessons-skill/skills/power-platform-lessons ~/.claude/skills/
 ```
-
-Restart Claude Code. The skill appears as `/power-platform-lessons` and also loads on its own for Power Platform tasks.
 
 ## Usage
 
@@ -56,10 +63,11 @@ The skill looks for a lessons file in your project (for example `docs/power-plat
 
 Issues and pull requests are welcome. A new lesson should be one line, say what to do (not only what went wrong), name the control version when it matters, and carry a **Verified** or **Inference** tag. Please leave out anything that identifies a company, tenant or project.
 
-After editing `power-platform-lessons/SKILL.md`, rebuild the zip:
+After editing `skills/power-platform-lessons/SKILL.md`, bump `version` in `.claude-plugin/plugin.json`, then rebuild the zip and validate:
 
 ```sh
-zip -r power-platform-lessons.zip power-platform-lessons -x '*.DS_Store'
+(cd skills && zip -r ../power-platform-lessons.zip power-platform-lessons -x '*.DS_Store')
+claude plugin validate --strict .
 ```
 
 ## Disclaimer

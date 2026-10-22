@@ -1,0 +1,13 @@
+{
+  "name": "power-platform-lessons",
+  "description": "Free Claude plugin with field-tested Power Platform lessons (Power Apps, Power Fx, Power Automate, Dataverse).",
+  "owner": {
+    "name": "Maurizio Masini"
+  },
+  "plugins": [
+    {
+      "name": "power-platform-lessons",
+      "source": "./"
+    }
+  ]
+}

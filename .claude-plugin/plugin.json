@@ -1,0 +1,11 @@
+{
+  "name": "power-platform-lessons",
+  "displayName": "Power Platform Lessons",
+  "version": "1.0.0",
+  "description": "Field-tested lessons for Power Apps (canvas and modern controls), Power Fx, Power Automate and Dataverse, applied before Claude writes formulas, .pa.yaml, flow JSON or queries.",
+  "author": { "name": "Maurizio Masini" },
+  "homepage": "https://github.com/MaurizioJJ/power-platform-lessons-skill",
+  "repository": "https://github.com/MaurizioJJ/power-platform-lessons-skill",
+  "license": "MIT",
+  "keywords": ["power-apps", "power-fx", "power-automate", "dataverse", "power-platform"]
+}
