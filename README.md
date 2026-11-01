@@ -31,7 +31,7 @@ Or from inside a session: `/plugin install power-platform-lessons --marketplace 
 
 ### Claude Desktop or claude.ai (skill upload)
 
-1. Download [`power-platform-lessons.zip`](power-platform-lessons.zip) from this repo.
+1. Download [`power-platform-lessons.zip`](https://github.com/MaurizioJJ/power-platform-lessons-skill/releases/latest/download/power-platform-lessons.zip) from the latest release.
 2. Open **Settings → Capabilities** and make sure **Code execution and file creation** is on (skills need it).
 3. In **Skills**, click **Upload skill** and choose the zip.
 4. Turn the skill on.
