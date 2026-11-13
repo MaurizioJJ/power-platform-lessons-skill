@@ -1,7 +1,7 @@
 {
   "name": "power-platform-lessons",
   "displayName": "Power Platform Lessons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Field-tested lessons for Power Apps (canvas and modern controls), Power Fx, Power Automate and Dataverse, applied before Claude writes formulas, .pa.yaml, flow JSON or queries.",
   "author": {
     "name": "Maurizio Masini"
